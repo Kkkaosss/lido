@@ -1,6 +1,6 @@
-# DEMOCEU · Web de 6.º B (EP), Es Liceu
+# LIDO · Web de 6.º B (EP), Es Liceu
 
-Web estática preparada para GitHub Pages. Respeta la estructura de los prototipos Canva: portada DEMOCEU, bloque «¿Quiénes somos?», accesos a las tres categorías y recomendaciones, páginas de categoría, ajustes, formulario y horarios.
+Web estática preparada para GitHub Pages. Respeta la estructura de los prototipos Canva: portada LIDO, bloque «¿Quiénes somos?», accesos a las tres categorías y recomendaciones, páginas de categoría, ajustes, formulario y horarios.
 
 ## Archivos
 
@@ -14,11 +14,11 @@ Web estática preparada para GitHub Pages. Respeta la estructura de los prototip
 ## Publicar en GitHub Pages
 
 1. Entra en [https://github.com](https://github.com) e inicia sesión. Si no tienes cuenta, pulsa **Sign up** y sigue los pasos de registro y verificación.
-2. Pulsa **New** (o el símbolo `+` y después **New repository**). Ponle un nombre, por ejemplo `democeu`, elige **Public** y pulsa **Create repository**.
+2. Pulsa **New** (o el símbolo `+` y después **New repository**). Ponle un nombre, por ejemplo `lido`, elige **Public** y pulsa **Create repository**.
 3. En el repositorio, pulsa **Add file → Upload files**. Arrastra el contenido de esta carpeta (no la carpeta contenedora): `index.html`, `styles.css`, `script.js`, `config.js`, `README.md`, y las carpetas `audio` y `assets`. Conserva exactamente los nombres y las carpetas. Pulsa **Commit changes**.
 4. El MP3 ya está en `audio/musica.mp3`. Si en el futuro lo cambias, sube el nuevo archivo con ese mismo nombre y ruta. Ten en cuenta que el MP3 que has adjuntado ocupa aproximadamente 172 MB: es un archivo muy pesado y puede superar límites de subida de GitHub o hacer que la web tarde mucho en cargar. Recomendación: exportar una versión MP3 más ligera (por ejemplo, 128 kbps y duración recortada) antes de publicarla. No subas archivos mayores de los límites que indique GitHub.
 5. Abre **Settings → Pages**. En **Build and deployment**, selecciona **Deploy from a branch**. En **Branch**, elige `main` y carpeta `/ (root)`. Pulsa **Save**.
-6. Espera a que termine la publicación. En **Settings → Pages** aparecerá el enlace público, normalmente `https://TU-USUARIO.github.io/democeu/`.
+6. Espera a que termine la publicación. En **Settings → Pages** aparecerá el enlace público, normalmente `https://TU-USUARIO.github.io/lido/`.
 7. Para actualizar la web, abre el archivo que quieras en GitHub y pulsa el lápiz (**Edit**) para cambiar texto/código, o vuelve a **Add file → Upload files** para subir imágenes/audio. Confirma con **Commit changes**. GitHub Pages publicará la actualización automáticamente al cabo de unos minutos.
 
 ## Cambiar productos, precios e imágenes
@@ -45,7 +45,7 @@ GitHub Pages solo sirve archivos estáticos: no recibe ni almacena formularios p
 2. Crea un formulario nuevo y configura el correo receptor del grupo/docente. Verifica la dirección si el servicio lo solicita.
 3. Copia el endpoint que te facilita Formspree, con formato `https://formspree.io/f/xxxxxxxx`.
 4. Abre `config.js` y cambia la línea para poner tu endpoint real, por ejemplo:
-   `window.DEMOCEU_FORM_ENDPOINT = 'https://formspree.io/f/abcdefgh';`
+   `window.LIDO_FORM_ENDPOINT = 'https://formspree.io/f/abcdefgh';`
 5. Guarda y vuelve a subir `config.js` al repositorio.
 
 Hasta que no se configure el endpoint, el formulario muestra un aviso y **no finge que se ha enviado nada**. Una vez conectado, solo mostrará la confirmación si Formspree devuelve una respuesta correcta. Revisa las condiciones y límites del plan gratuito de Formspree.
@@ -74,3 +74,15 @@ La web intenta iniciar la música al cargar, pero los navegadores suelen bloquea
 - Música: comprueba el botón de sonido después de permitir la reproducción.
 
 > Nota: al ser una web estática, no hay carrito de compra, pagos ni pedidos. La lista de deseados se guarda únicamente en el dispositivo/navegador del visitante; no se comparte entre dispositivos.
+
+
+## Dem0, mascota y asistente de Lido
+
+- La ilustración está en `assets/demo0.png`.
+- La animación de entrada, el personaje flotante y el cuadro «¡Dem0 pregunta!» están integrados en `index.html` y `styles.css`.
+- Las respuestas están programadas en `script.js` mediante reglas y textos predeterminados. No utiliza IA ni consulta inventario externo.
+- Los precios del catálogo son ejemplos y la disponibilidad real no está conectada; Dem0 lo aclara al responder.
+- La voz usa la síntesis de voz del navegador con tono y velocidad elevados y pequeños pitidos retro. La voz exacta depende del navegador y del sistema operativo.
+- El golpe al caer se genera con Web Audio, sin archivo adicional.
+
+Para cambiar las respuestas, busca `function dem0Answer` y las cadenas `mascot...` dentro de `I18N` en `script.js`. Para cambiar el dibujo, sustituye `assets/demo0.png` manteniendo el mismo nombre.

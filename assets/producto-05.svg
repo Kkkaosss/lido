@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Imagen de ejemplo de producto artesanal">
+ <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9bc9"/><stop offset="1" stop-color="#e83e60"/></linearGradient></defs>
+ <rect width="800" height="600" fill="#f9e8ef"/><circle cx="400" cy="300" r="220" fill="url(#g)" opacity=".20"/><circle cx="400" cy="300" r="155" fill="none" stroke="#d94c80" stroke-width="3" stroke-dasharray="8 14"/><path d="M400 165c-85 0-145 68-145 145 0 88 75 143 145 143s145-55 145-143c0-77-60-145-145-145Z" fill="url(#g)" opacity=".75"/><path d="M400 220v180M310 310h180" stroke="#fff" stroke-width="15" stroke-linecap="round" opacity=".8"/><text x="400" y="535" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#71384e">FOTO DE PRODUCTO</text>
+</svg>
