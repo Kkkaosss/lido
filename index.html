@@ -42,7 +42,7 @@
       <section class="page active" id="page-inicio" data-page="inicio">
         <div class="hero-frame">
           <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
-          <div class="hero-content"><p class="eyebrow" data-i18n="heroEyebrow">6.º B · ES LICEU PRESENTA</p><h1>LIDO<span>✳</span><span class="mascot-intro" id="mascotIntro" aria-hidden="true"><img src="assets/demo0.png" alt=""><i class="mascot-bump-arm"></i></span></h1>
+          <div class="hero-content"><p class="eyebrow" data-i18n="heroEyebrow">6.º B · ES LICEU PRESENTA</p><h1>LIDO<span>✳</span></h1>
             <p class="hero-sub" data-i18n="heroSub">Pequeñas creaciones, un gran viaje.</p>
             <a class="pill-button hero-about" href="#quienes" data-i18n="who">¿Quiénes somos?</a>
           </div>
@@ -79,17 +79,7 @@
 
       <section class="page" id="page-wishlist" data-page="wishlist"><div class="page-heading"><div><div class="section-kicker" data-i18n="savedForLater">GUARDADOS PARA DESPUÉS</div><h1 data-i18n="wishlist">Lista de deseados</h1><p data-i18n="wishlistIntro">Tus productos favoritos, todos en un mismo lugar.</p></div><span class="heading-stamp">☆</span></div><div id="wishlistItems" class="product-grid wishlist-grid"></div><div class="empty-state" id="wishlistEmpty"><span>☆</span><h2 data-i18n="emptyWishlist">Todavía no has guardado nada.</h2><p data-i18n="emptyWishlistHint">Explora los productos y añade tus favoritos con un toque.</p><button class="secondary-button" data-go="cat1" data-i18n="seeProducts">Ver productos</button></div></section>
     </main>
-    <button class="lido-mascot" id="mascotButton" type="button" aria-label="Hablar con Dem0" title="¡Pregunta a Dem0!">
-      <span class="mascot-status-dot"></span><img src="assets/demo0.png" alt="Dem0, asistente de Lido"><span class="mascot-hint" data-i18n="mascotHint">¡Pregúntame!</span>
-    </button>
-    <div class="mascot-backdrop" id="mascotBackdrop" hidden></div>
-    <section class="mascot-chat" id="mascotChat" role="dialog" aria-modal="true" aria-labelledby="mascotTitle" aria-hidden="true">
-      <header class="mascot-chat-head"><div class="mascot-chat-avatar"><img src="assets/demo0.png" alt=""></div><div><span class="mascot-online" data-i18n="mascotOnline">ASISTENTE DE LIDO · EN LÍNEA</span><h2 id="mascotTitle" data-i18n="mascotTitle">¡Dem0 pregunta!</h2></div><button type="button" id="mascotClose" class="mascot-close" aria-label="Cerrar">×</button></header>
-      <div class="mascot-chat-body"><p class="mascot-welcome" data-i18n="mascotWelcome">¡Hola! Soy Dem0. Pregúntame por los productos, precios o la página.</p><div class="mascot-answer" id="mascotAnswer" aria-live="polite" hidden></div></div>
-      <form class="mascot-question-form" id="mascotQuestionForm"><label class="sr-only" for="mascotQuestion" data-i18n="mascotPlaceholderLabel">Escribe tu pregunta</label><input id="mascotQuestion" name="question" maxlength="240" required data-placeholder="mascotPlaceholder" placeholder="¿Tenéis ... en stock?"><button type="submit" aria-label="Enviar pregunta">➜</button></form>
-      <footer class="mascot-chat-foot"><span data-i18n="mascotDisclaimer">Sistema de respuestas diseñado por Kaos. No utiliza IA.</span><span class="mascot-voice-note" data-i18n="mascotVoiceNote">Voz retro · 8-bit</span></footer>
-    </section>
-    <button class="music-button" id="musicToggle" aria-label="Activar o silenciar música" title="Música"><span id="musicIcon">♫</span><span class="music-label" id="musicLabel" data-i18n="musicOn">Música</span></button>
+<button class="music-button" id="musicToggle" aria-label="Activar o silenciar música" title="Música"><span id="musicIcon">♫</span><span class="music-label" id="musicLabel" data-i18n="musicOn">Música</span></button>
     <audio id="backgroundMusic" src="audio/musica.mp3" loop preload="none"></audio>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </div>

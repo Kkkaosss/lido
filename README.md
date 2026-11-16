@@ -76,13 +76,3 @@ La web intenta iniciar la música al cargar, pero los navegadores suelen bloquea
 > Nota: al ser una web estática, no hay carrito de compra, pagos ni pedidos. La lista de deseados se guarda únicamente en el dispositivo/navegador del visitante; no se comparte entre dispositivos.
 
 
-## Dem0, mascota y asistente de Lido
-
-- La ilustración está en `assets/demo0.png`.
-- La animación de entrada, el personaje flotante y el cuadro «¡Dem0 pregunta!» están integrados en `index.html` y `styles.css`.
-- Las respuestas están programadas en `script.js` mediante reglas y textos predeterminados. No utiliza IA ni consulta inventario externo.
-- Los precios del catálogo son ejemplos y la disponibilidad real no está conectada; Dem0 lo aclara al responder.
-- La voz usa la síntesis de voz del navegador con tono y velocidad elevados y pequeños pitidos retro. La voz exacta depende del navegador y del sistema operativo.
-- El golpe al caer se genera con Web Audio, sin archivo adicional.
-
-Para cambiar las respuestas, busca `function dem0Answer` y las cadenas `mascot...` dentro de `I18N` en `script.js`. Para cambiar el dibujo, sustituye `assets/demo0.png` manteniendo el mismo nombre.
